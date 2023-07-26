@@ -13,7 +13,18 @@
         <link href="./css/contact.css" rel="stylesheet">
     </head>
     <body class="position-relative" data-bs-spy="scroll">
-        <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light position-fixed w-100 fixed-top">
+
+      <%- include('./partials/navbar.ejs') %>
+      <div data-spy="scroll" data-target="#navbar" data-offset="0">
+        <%- include('./partials/home.ejs') %>
+        <%- include('./partials/about.ejs') %>
+        <%- include('./partials/services.ejs') %>
+        <%- include('./partials/recommendations.ejs') %>
+        <%- include('./partials/portfolio.ejs') %>
+        <%- include('./partials/contact.ejs') %>
+      </div>
+
+        <!--<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light position-fixed w-100 fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#home">The cake master</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,9 +53,9 @@
                     </ul>
                 </div>
             </div>
-          </nav>
+          </nav> -->
           <div data-spy="scroll" data-target="#navbar" data-offset="0">
-            <header id="home">
+            <!--<header id="home">
                 <div class="container-fluid header-content">
                   <div class="row">
                     <div class="col">
@@ -57,9 +68,9 @@
                     </div>
                   </div>
                 </div>
-            </header>
+            </header>-->
             
-            <section class="about" id="about">
+            <!--<section class="about" id="about">
               <div class="container">
                 <div class="row">
                   <div class="col-lg-6">
@@ -80,8 +91,8 @@
                   </div>
                 </div>
               </div>
-            </section>
-            <section id="services">
+            </section>-->
+            <!--<section id="services">
               <div class="container text-center">
                 <div class="row">
                   <div class="col mb-5 ">
@@ -131,8 +142,8 @@
                     </div>
                 </div>
               </div>
-            </section>
-            <section id="recommendations">
+            </section>-->
+            <!--<section id="recommendations">
               <div class="p-5 text-center">
                 <h2>Testimony</h2>
                 <p class="mb-5">What people say about us.</p>
@@ -195,8 +206,8 @@
                   </button>
                 </div>
               </div>
-            </section>
-          <section id="portfolio">
+            </section>-->
+          <!--<section id="portfolio">
             <div class="container">
               <div class="row">
                 <div class="col mb-5 text-center">
@@ -279,8 +290,8 @@
                   </div>
                 </div>              
               </div>
-        </section>
-            <section id="contact">
+        </section>-->
+            <!--<section id="contact">
               <div class="container text-center">
                 <div class="row">
                   <div class="col">
@@ -325,7 +336,7 @@
                     </div>
                   </div>
                 </div>
-            </section>
+            </section>-->
           </div>
         <script src="/jquery.min.js"></script>
         <script src="/js/bootstrap.bundle.min.js"></script>
