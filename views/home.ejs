@@ -12,6 +12,8 @@
         <%- include('./partials/home.ejs') %>
       </div>
       <%- include('./partials/scripts.ejs') %>
+
+      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
       <script>
         var typed = new Typed(".aboutMe", {
           strings: <%- JSON.stringify(array) %> ,
@@ -23,6 +25,8 @@
           startDelay: 1000
         });
       </script>
+
+      
 
     </body>
 </html>
